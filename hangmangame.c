@@ -82,6 +82,8 @@ int main() {
         "modem",
         "router",
         "semiconductor",
+        "context window",
+        "machine learning",
     };
     int totalword=sizeof(wordlist)/sizeof(wordlist[0]);
     srand(time(NULL));

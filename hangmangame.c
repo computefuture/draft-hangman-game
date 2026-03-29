@@ -22,17 +22,26 @@ void hangmandraw(int incorrectguess) {
         printf(" |   |\n");
     } 
     if (incorrectguess >= 4) {
-        printf("/|\\  |\n");
+        printf(" |   |\n");
     } else {
         printf("     |\n");
     }
     if (incorrectguess >= 5) {
-        printf(" |   |\n");
+        printf("/|\\  |\n");
     } 
     if (incorrectguess >= 6) {
         printf(" |   |\n");
     } 
-    if (incorrectguess >=7) {
+    if (incorrectguess >= 7) {
+        printf(" |   |\n");
+    } 
+    if (incorrectguess >= 8) {
+        printf(" |   |\n");
+    } 
+     if (incorrectguess >= 9) {
+        printf(" |   |\n");
+    } 
+    if (incorrectguess >=10) {
         printf("/|\\  |\n");  
     } else {
         printf("     |\n");
@@ -84,6 +93,13 @@ int main() {
         "semiconductor",
         "context window",
         "machine learning",
+        "agentic",
+        "tensorflow",
+        "pytorch",
+        "kubernetes",
+        "docker",
+        "javascript",
+        "typescript",
     };
     int totalword=sizeof(wordlist)/sizeof(wordlist[0]);
     srand(time(NULL));
@@ -91,7 +107,7 @@ int main() {
     int totalround=3;
     int currentscore=0;
     printf("===============================\n");
-    printf("Welcome to the Ultimate Hangman Challenge!\n In this game, you have to win three rounds to become the champion! \n Failing to win a round will result in losing the game.\n");
+    printf("Welcome to the Ultimate Technology Hangman Challenge!\n In this game, you have to win three rounds to become the champion! \n Failing to win a round will result in losing the game.\n");
     printf("===============================\n");
 
     for (int round=1; round <=totalround; round++) {
@@ -109,7 +125,7 @@ int main() {
     
     char guess;
     int incorrectguess = 0;
-    int maxincorrectguess = 7;  
+    int maxincorrectguess = 10;  
     int haswon = 0;
     
     while (incorrectguess < maxincorrectguess) {

@@ -100,6 +100,10 @@ int main() {
         "docker",
         "javascript",
         "typescript",
+        "nextjs",
+        "react",
+        "mandatory access control",
+        "packet filter",
     };
     int totalword=sizeof(wordlist)/sizeof(wordlist[0]);
     srand(time(NULL));

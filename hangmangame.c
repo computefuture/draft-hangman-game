@@ -192,7 +192,9 @@ int main() {
     printf("You cleared all %d rounds!\n", totalround);
     printf("=========================================\n");
 
-
+    printf("Press Enter to exit: ");
+    getchar();
+    getchar();
     
     return 0;
 }

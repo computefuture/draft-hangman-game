@@ -8,7 +8,7 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 find_package(SDL2 REQUIRED)
-find_package(SDL2_ttf_required)
+find_package(SDL2_ttf_REQUIRED)
 find_package(SDL2_mixer REQUIRED)
 
 add_executable(ultimate_hangman
@@ -19,14 +19,14 @@ add_executable(ultimate_hangman
     src/assets.c
 )
 
-target_include directories (ultimate_hangman PRIVATE
-    $(SDL2_INCLUDE_DIRS)
-    $(SDL2_TTF_INCLUDE_DIRS)
-    $(SDL2_MIXER_INCLUDE_DIRS)
+target_include_directories (ultimate_hangman PRIVATE
+    ${SDL2_INCLUDE_DIRS}
+    ${SDL2_TTF_INCLUDE_DIRS}
+    ${SDL2_MIXER_INCLUDE_DIRS}
 )
 
-target_link libraries (ultimate_hangman PRIVATE
-    $(SDL2_LIBRARIES)
+target_link_libraries (ultimate_hangman PRIVATE
+    ${SDL2_LIBRARIES}
     SDL2_ttf
     SDL2_mixer
 )
